@@ -36,12 +36,12 @@ python download-stream.py <first_ts_url> <last_ts_url> --structure <segment_stru
 ```
 
 ## Parameters
+```bash
 <first_ts_url>: The URL of the first .ts segment.
 <last_ts_url>: The URL of the last .ts segment.
 --structure: The URL structure for the .ts segments with a {} placeholder for the segment number.
 --sneaky: (Optional) Enable sneaky mode, which adds a delay between downloads to mimic natural streaming.
 
-```bash
 python download-stream.py "https://streamcdnm4-ply.com/Puntate/15402551_,1800,2400,.mp4.csmil/seg-1-f2-v1-a1.ts" "https://streamcdnm4-ply.com/Puntate/15402551_,1800,2400,.mp4.csmil/seg-79-f2-v1-a1.ts" --structure "seg-{}-f2-v1-a1.ts" --sneaky
 ```
 
